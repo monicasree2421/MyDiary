@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MyDiary</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>MyDiary</h1>
+    </div>
+
+    <div class="container">
+        <div class="diary-container">
+            <h2>MY BIRTHDAY</h2>
+            <h5>2023/24/09</h5>
+            <p>My birthday is the most special day in my life. I love my birthday since my parents give me gifts on that day. I cut a cake and have a party with all my friends. This year I got a bicycle for my birthday, and it is the best gift I have received so far!</p>
+            <button onclick="del(event)">DELETE</button>
+        </div>
+    </div>
+
+    <div class="popup"></div>
+    <div class="popupbox">
+        <h2>ADD</h2>
+        <form>
+            <input type="text" placeholder="Title" id="title">
+            <input type="date" placeholder="date" id="date">
+            <textarea placeholder="Short Description" id="description" ></textarea>
+            <button id="add">ADD</button>
+            <button id="cancel">CANCLE</button>
+        </form>
+        </div>
+       
+
+    <button class="add-button" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
